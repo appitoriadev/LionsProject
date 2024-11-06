@@ -12,7 +12,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/Recursos/Imagenes/fondo_registro.jpg');
+    background-image: url('/Imagenes/fondo_registro.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -38,12 +38,13 @@ body {
 
 .container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    max-width: 1100px;
-    margin: 20px auto;
+    max-width: 100%;
+    margin: 2% auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     border-top-left-radius: 10px;
-    z-index: 1; /* Delante de la cortina y del fondo */
+    z-index: 1; 
 }
 
 .regir,
@@ -52,7 +53,7 @@ body {
 }
 
 .regir {
-    width: 374px; 
+    width: 40%;
     background: linear-gradient(to bottom, #5F8DB5, #4285F4);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -102,7 +103,7 @@ body {
 }
 
 .form-group {
-    width: 440px; 
+    width: 30%; 
     background: linear-gradient(to bottom, #5F8DB5, #4285F4);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -113,6 +114,8 @@ body {
 }
 
 .input-icon {
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding: 50px 5px;
 }
@@ -120,6 +123,11 @@ body {
 .input-container {
     position: relative;
     margin-bottom: 15px;
+}
+
+.input-icon 
+.input-container  {
+    position: relative;
 }
 
 .input-container i.icon {
@@ -228,7 +236,7 @@ a {
 }
 
 .img3 {
-    max-width: 80%;
+    max-width: 60%;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -344,7 +352,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/Recursos/Imagenes/fondo_registro.jpg');
+    background-image: url('/Imagenes/fondo_registro.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -650,10 +658,11 @@ select {
 .input-container {
     position: relative;
     display: flex;
+    
     align-items: center;
 }
 
-.input-container input[type="password"] {
+.input-container input[type="select"],input[type="text"],input[type="password"] {
     width: 100%;
     box-sizing: border-box;
 }
@@ -693,4 +702,11 @@ select {
         flex-direction: column; /* Cambiado a columna en pantallas pequeñas */
         gap: 10px; /* Espacio entre los botones en columna */
     }
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
 }

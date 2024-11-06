@@ -9,6 +9,7 @@ import { AuthLayoutComponent } from './layouts/authlayout/authlayout.component';
 import { LibrosComponent } from './libros/libros.component';
 import { IndiceLibrosComponent } from './indice-libros/indice-libros.component';
 import { VerpdfComponent } from './verpdf/verpdf.component';
+import { RecuperarComponent } from './auth/recuperar/recuperar.component';
 
 export const routes: Routes = [
     // {
@@ -33,6 +34,7 @@ export const routes: Routes = [
         children: [
             { path: 'login', component: LoginComponent },
             { path: 'registro', component: RegistroComponent },
+            { path: 'recuperar', component: RecuperarComponent },
         ],
     },
     { path: '**', redirectTo: '', pathMatch: 'full' }

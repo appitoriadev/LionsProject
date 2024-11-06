@@ -1,0 +1,24 @@
+/* Estilos comunes para el cuerpo de la página */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+
+}
+/* 
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+} */
